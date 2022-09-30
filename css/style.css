@@ -9,6 +9,7 @@
 }
 
 .blur.active {
+	animation: escurecer 0.3s linear;
 	display: block;
 	min-height: 100vh;
 	width: 100vw;
@@ -28,7 +29,6 @@ body {
 header {
 	height: 70px;
 	width: 100%;
-
 	display: flex;
 	align-items: center;
 	padding: 0 5%;
@@ -46,24 +46,25 @@ header {
 }
 
 .humburger.active {
-	display: block;
-
-	width: 0;
+	animation: menuAtivar 0.3s linear;
 	height: 100vh;
+	display: flex;
 	transition: 0.5s;
 	width: 50vw;
-	top: 0px;
+	top: 0;
 	left: 0;
 	position: absolute;
 	z-index: 10;
-
 	background-color: white;
 }
+
 .humburger ul {
 	margin-top: 60px;
 	margin-left: 40px;
 }
+
 .humburger li {
+	animation: letras 0.3s linear;
 	list-style: none;
 	margin-bottom: 20px;
 	font-size: 20px;
@@ -105,7 +106,6 @@ header {
 	display: block;
 	padding: 5px;
 	background-color: #ffff;
-
 	position: absolute;
 	top: 60px;
 	right: 100px;
@@ -147,9 +147,6 @@ p#cart {
 	gap: 20px;
 }
 
-.perfil {
-}
-
 main {
 	width: 100vw;
 	min-height: calc(100vh - 70px);
@@ -159,11 +156,13 @@ main {
 	flex-wrap: wrap;
 	gap: 4;
 }
+
 .imagens,
 .textos {
 	width: 49%;
 	height: 70vh;
 }
+
 .imagens {
 	display: flex;
 	flex-direction: column;
@@ -334,5 +333,37 @@ img {
 		left: 50%;
 		transform: translateX(-50%);
 		width: 95vw;
+	}
+}
+
+@keyframes menuAtivar {
+	0% {
+		width: 0vw;
+	}
+
+	100% {
+		width: 50vw;
+	}
+}
+
+@keyframes letras {
+	0% {
+		color: #ffff;
+		font-size: 0;
+	}
+
+	100% {
+		font-size: 20px;
+		color: #000;
+	}
+}
+
+@keyframes escurecer {
+	0% {
+		background: rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		background: rgba(2, 2, 2, 0.9);
 	}
 }
