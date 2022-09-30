@@ -57,14 +57,16 @@
 
         <div class="botoes">
             <div class="incremento">
-                <span class="sinais__operacao" id="menos">-</span>
-                <span id="quantidade">0</span>
-                <span class="sinais__operacao" id="mais">+</span>
+                <span class="sinais__operacao" id="menos" onclick="incrementar(-1)">-</span>
+                <span id="quantidade"></span>
+                <span class="sinais__operacao" id="mais" onclick="incrementar(1)">+</span>
             </div>
 
             <button id="add__to__cart"> <img src="./img/icon-cart.svg" alt=""> Add to cart</button>
         </div>
         </div>
     </main>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

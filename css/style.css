@@ -181,6 +181,8 @@ main{
 .sinais__operacao{
     font-size: 20px;
     color: orange;
+    cursor: pointer;
+    padding: 5px;
 }
 
 #add__to__cart img{
@@ -207,9 +209,7 @@ img{
 }
 
 @media screen and (max-width:800px){
-    body{
-        padding: 0 10px;
-    }
+
     .menu{
         display: none;
     }
@@ -219,7 +219,7 @@ img{
     }
 
     .imagens, .textos{
-        width: 100vw;
+        width: 99vw;
     }
 
     .textos{
