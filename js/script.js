@@ -17,7 +17,7 @@ function mudarImagem(imagemClicada, posicao) {
 	let imagem = imagens[posicao];
 	imagens.forEach((elemento) => {
 		imagemPrincipal.style.border = "none";
-		elemento.style.opacity = "1";f
+		elemento.style.opacity = "1";
 	});
 
 	imagemPrincipal.src = imagemClicada;
