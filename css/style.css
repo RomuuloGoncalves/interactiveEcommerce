@@ -274,4 +274,7 @@ img {
 		justify-content: center;
 		align-items: center;
 	}
+	.modal__carrinho.active {
+		right: 70px;
+	}
 }
