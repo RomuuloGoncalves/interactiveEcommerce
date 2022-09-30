@@ -38,23 +38,54 @@ header {
 	margin-left: auto;
 }
 
-.carrinho img{
+.carrinho img {
 	fill: #0000;
 	cursor: pointer;
 }
 
-.modal__carrinho{
+.modal__carrinho {
 	display: none;
 }
 
-.modal__carrinho.active{
-	display: flex;
-	padding: 20px;
+.modal__carrinho.active {
+	min-width: 250px;
+	height: 100px;
+	display: block;
+	padding: 5px;
+
 	position: absolute;
-	top: 50px;
-	box-shadow: 2px 2px 10px black;
+	top: 60px;
+	right: 100px;
+	border-radius: 5px;
+	box-shadow: 2px 1px 10px rgba(97, 95, 95, 0.733);
 }
 
+p#cart {
+	display: flex;
+	align-items: center;
+	height: 30px;
+	border-bottom: 1px solid grey;
+	margin-bottom: 5px;
+}
+
+.compra {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.modal__carrinho img {
+	border-radius: 5px;
+}
+
+.modal__carrinho span {
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.lixo {
+	cursor: pointer;
+}
 .container {
 	display: flex;
 	align-items: center;
