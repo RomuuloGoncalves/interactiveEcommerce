@@ -3,8 +3,10 @@ const modal = document.querySelector(".modal__carrinho")
 const quantidade = document.getElementById("quantidade");
 
 let storangeFunctions = {
-	guardar: (valor) =>localStorage.setItem("quantidade", JSON.stringify(valor)) || "",
-	pegar: () => JSON.parse(localStorage.getItem("quantidade")) || "0",
+	guardarContagem: (valor) =>localStorage.setItem("quantidade", JSON.stringify(valor)) || "",
+	pegarContagem: () => JSON.parse(localStorage.getItem("quantidade")) || "0",
+	guardarCarrinho: (valor)=>localStorage.setItem("carrinho", JSON.stringify(valor)) || "",
+	pegarCarrinho: () => JSON.parse(localStorage.getItem("carrinho")) || "	<p id='cart'>Cart</p><p>Your cart is empty</p>",
 };
 
 function incrementar(valor) {
@@ -12,7 +14,7 @@ function incrementar(valor) {
 	
 	if(numero >= 0){
 		quantidade.innerHTML = numero
-		storangeFunctions.guardar(quantidade.innerHTML);
+		storangeFunctions.guardarContagem(quantidade.innerHTML);
 	}
 }
 
@@ -64,8 +66,8 @@ function adicionarCarrinho(){
 	`
 	modal.innerHTML += html
 
+	storangeFunctions.guardarCarrinho(modal.innerHTML)
 	modalCarrinho()
-
 	setTimeout(modalCarrinho, 1000)
 }
 
@@ -76,8 +78,10 @@ function limparCarrinho(){
 	<p>Your cart is empty</p>
 	`
 	modal.innerHTML += html
+	storangeFunctions.guardarCarrinho(modal.innerHTML)
 	modalCarrinho()
 }
 
-document.getElementById("quantidade").innerHTML = storangeFunctions.pegar();
+modal.innerHTML = storangeFunctions.pegarCarrinho()
+quantidade.innerHTML = storangeFunctions.pegarContagem();
 mudarImagem("./img/image-product-1.jpg", 0);
