@@ -1,72 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce</title>
-    <link rel="stylesheet" href="./css/style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E-commerce</title>
+	<link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header id="header">
-            <div class="marca">
-                <img src="./img/logo.svg" alt="Logo">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li>Collections</li>
-                    <li>Men</li>
-                    <li>Women</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
+	<header id="header">
+		<div class="marca">
+			<img src="./img/logo.svg" alt="Logo">
+		</div>
+		<div class="menu">
+			<ul>
+				<li>Collections</li>
+				<li>Men</li>
+				<li>Women</li>
+				<li>About</li>
+				<li>Contact</li>
+			</ul>
+		</div>
 
-            <div class="container">
+		<div class="container">
 
-                <div class="carrinho">
-                    <img src="./img/icon-cart.svg" alt="cart">
-                </div>
-                <div class="perfil">
-                    <img src="./img/image-avatar.png" alt="avatar">
-                </div>
-            </div>
-    </header>
+			<div class="carrinho">
+				<img src="./img/icon-cart.svg" alt="cart">
+			</div>
+			<div class="perfil">
+				<img src="./img/image-avatar.png" alt="avatar">
+			</div>
+		</div>
+	</header>
 
-    <main>
-        <div class="imagens">
-            <div id="imagem__principal">
-                <img id="imagemPrincipal" src="img/image-product-1.jpg" alt="">
-            </div>
-            <div class="escolhas">
-                <div class="imagens__escolha"><img src="./img/image-product-1-thumbnail.jpg" onclick="mudarImagem('./img/image-product-1.jpg', 0)" alt=""></div>
-                <div class="imagens__escolha"><img src="./img/image-product-2-thumbnail.jpg" onclick="mudarImagem('./img/image-product-2.jpg', 1)" alt=""></div>
-                <div class="imagens__escolha"><img src="./img/image-product-3-thumbnail.jpg" onclick="mudarImagem('./img/image-product-3.jpg', 2)" alt=""></div>
-                <div class="imagens__escolha"><img src="./img/image-product-4-thumbnail.jpg" onclick="mudarImagem('./img/image-product-4.jpg', 3)" alt=""></div>
-            </div>
-        </div>
-        <div class="textos">
-           <p id="company">SNEAKER COMPANY</p>
-        <h2>Fall Limited Edition Seneakers</h2>
-        <p id="paragrafo">
-            These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll
-            withstand everything the weather can offer
-        </p>
-        <p id="preco">$125.00 <span id="desconto">50%</span></p>
-        <p id="preco__original">$250.00</p>
+	<main>
+		<div class="imagens">
+			<div id="imagem__principal">
+				<img src="img/image-product-1.jpg" alt="">
+			</div>
+			<div class="escolhas">
+				<div class="imagens__escolha"><img src="./img/image-product-1-thumbnail.jpg" onclick="mudarImagem('./img/image-product-1.jpg', 0)" alt=""></div>
+				<div class="imagens__escolha"><img src="./img/image-product-2-thumbnail.jpg" onclick="mudarImagem('./img/image-product-2.jpg', 1)" alt=""></div>
+				<div class="imagens__escolha"><img src="./img/image-product-3-thumbnail.jpg" onclick="mudarImagem('./img/image-product-3.jpg', 2)" alt=""></div>
+				<div class="imagens__escolha"><img src="./img/image-product-4-thumbnail.jpg" onclick="mudarImagem('./img/image-product-4.jpg', 3)" alt=""></div>
+			</div>
+		</div>
+		<div class="textos">
+			<p id="company">SNEAKER COMPANY</p>
+			<h2>Fall Limited Edition Seneakers</h2>
+			<p id="paragrafo">
+				These low-profile sneakers are your perfect casual wear companion. Featuring a durable
+				rubber outer
+				sole, they'll
+				withstand everything the weather can offer
+			</p>
+			<p id="preco">$125.00 <span id="desconto">50%</span></p>
+			<p id="preco__original">$250.00</p>
 
-        <div class="botoes">
-            <div class="incremento">
-                <span class="sinais__operacao" id="menos" onclick="incrementar(-1)">-</span>
-                <span id="quantidade"></span>
-                <span class="sinais__operacao" id="mais" onclick="incrementar(1)">+</span>
-            </div>
+			<div class="botoes">
+				<div class="incremento">
+					<span class="sinais__operacao" id="menos" onclick="incrementar(-1)">-</span>
+					<span id="quantidade"></span>
+					<span class="sinais__operacao" id="mais" onclick="incrementar(1)">+</span>
+				</div>
 
-            <button id="add__to__cart"> <img src="./img/icon-cart.svg" alt=""> Add to cart</button>
-        </div>
-        </div>
-    </main>
+				<button id="add__to__cart"> <img src="./img/icon-cart.svg" alt=""> Add to cart</button>
+			</div>
+		</div>
+	</main>
 
-    <script src="./js/script.js"></script>
+	<script src="./js/script.js"></script>
 </body>
+
 </html>
