@@ -1,229 +1,228 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-body{
-    min-height: 100vh;
-    max-width: 100vw;
+body {
+	min-height: 100vh;
+	max-width: 100vw;
 }
 
-header{
-    height: 70px;
-    width: 100%;
+header {
+	height: 70px;
+	width: 100%;
 
-    display: flex;
-    align-items: center;
-    padding: 0 5%;
+	display: flex;
+	align-items: center;
+	padding: 0 5%;
 }
 
-.marca{
-    justify-self: flex-start;
-    margin-right: 50px ;
+.marca {
+	justify-self: flex-start;
+	margin-right: 50px;
 }
 
-.menu ul{
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.menu ul {
+	display: flex;
+	align-items: center;
+	gap: 15px;
 }
 
-.menu li{
-    color: grey;
-    list-style: none;
+.menu li {
+	color: grey;
+	list-style: none;
 }
 
-.carrinho{
-    margin-left: auto;
+.carrinho {
+	margin-left: auto;
 }
 
-.container{
-    display: flex;
-    align-items: center;
-    max-height: 100%;
-    margin-left: auto;
-    gap: 20px;
+.container {
+	display: flex;
+	align-items: center;
+	max-height: 100%;
+	margin-left: auto;
+	gap: 20px;
 }
 
-.perfil{
-
+.perfil {
 }
 
-main{
-    width: 100vw;
-    min-height: calc(100vh - 70px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 4;
+main {
+	width: 100vw;
+	min-height: calc(100vh - 70px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 4;
 }
-.imagens, .textos{
-    width: 49%;
-    height: 70vh;
+.imagens,
+.textos {
+	width: 49%;
+	height: 70vh;
 }
-.imagens{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-#imagem__principal{
-    height: 55vh;
-    overflow:hidden;
-    border-radius: 20px;
+.imagens {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
 }
 
-#imagem__principal img{
-    min-height: 100%;
-    width: 100%;
-
+#imagem__principal {
+	height: 55vh;
+	overflow: hidden;
+	border-radius: 20px;
 }
 
-.escolhas{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+#imagem__principal img {
+	min-height: 100%;
+	width: 100%;
 }
 
-.imagens__escolha{
-    height: 70px;
-    border-radius: 20px ;
-    overflow: hidden;
+.escolhas {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
 }
 
-.imagens__escolha img{
-    min-height: 100%;
-    width: 100%;
+.imagens__escolha {
+	height: 70px;
+	width: 70px;
+	border-radius: 20px;
+	overflow: hidden;
 }
 
-.textos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.imagens__escolha img {
+	min-height: 100%;
+	width: 100%;
 }
 
-#company{
-    color: orange;
-    font-size: 16px;
-    font-weight: 600;
-    position: relative;
-    bottom: 20px;
+.textos {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.textos h2{
-    min-height: 1px;
-    width: 300px;
-    font-size: 30px;
-    margin-bottom: 20px;
+#company {
+	color: orange;
+	font-size: 16px;
+	font-weight: 600;
+	position: relative;
+	bottom: 20px;
 }
 
-.textos #paragrafo{
-    min-height: auto;
-    max-width: 500px;
-    color: rgb(78, 77, 77);
-    margin-bottom: 20px;
+.textos h2 {
+	min-height: 1px;
+	width: 300px;
+	font-size: 30px;
+	margin-bottom: 20px;
 }
 
-#preco{
-    height: 35px;
-    width: 150px;
-    display: flex;
-    font-size: 25px;
-    align-items: center;
-    margin-bottom: 5px;
+.textos #paragrafo {
+	min-height: auto;
+	max-width: 500px;
+	color: rgb(78, 77, 77);
+	margin-bottom: 20px;
 }
 
-#desconto{
-    background-color: hsl(25, 100%, 94%);
-    height: 25px;
-    width: 50px;
-    color: orange;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 10px;
-    font-size: 16px;
+#preco {
+	height: 35px;
+	width: 150px;
+	display: flex;
+	font-size: 25px;
+	align-items: center;
+	margin-bottom: 5px;
 }
 
-#preco__original{
-    text-decoration: line-through;
-    color: rgb(78, 77, 77);
-    font-size: 14px;
-    margin-bottom: 10px;
-
+#desconto {
+	background-color: hsl(25, 100%, 94%);
+	height: 25px;
+	width: 50px;
+	color: orange;
+	font-weight: 700;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 10px;
+	font-size: 16px;
 }
 
-.botoes{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+#preco__original {
+	text-decoration: line-through;
+	color: rgb(78, 77, 77);
+	font-size: 14px;
+	margin-bottom: 10px;
 }
 
-.incremento{
-    background-color: hsl(223, 64%, 98%);
-    height: 35px;
-    width: 150px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 10px;
+.botoes {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 
-.sinais__operacao{
-    font-size: 20px;
-    color: orange;
-    cursor: pointer;
-    padding: 5px;
+.incremento {
+	background-color: hsl(223, 64%, 98%);
+	height: 35px;
+	width: 150px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 10px;
 }
 
-#add__to__cart img{
-    color: white;
+.sinais__operacao {
+	font-size: 20px;
+	color: orange;
+	cursor: pointer;
+	padding: 5px;
 }
 
-#add__to__cart{
-    height: 40px;
-    font-size: 16px;
-    padding: 5px 40px;
-    color: #ffff;
-    background-color:  hsl(26, 100%, 55%);
-    border: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:16px;
-    cursor: pointer;
-    border-radius: 10px;
+#add__to__cart img {
+	color: white;
 }
 
-img{    
-    max-height: 50PX;
+#add__to__cart {
+	height: 40px;
+	font-size: 16px;
+	padding: 5px 40px;
+	color: #ffff;
+	background-color: hsl(26, 100%, 55%);
+	border: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	cursor: pointer;
+	border-radius: 10px;
 }
 
-@media screen and (max-width:800px){
+img {
+	max-height: 50px;
+}
 
-    .menu{
-        display: none;
-    }
+@media screen and (max-width: 800px) {
+	.menu {
+		display: none;
+	}
 
-    main{
-        flex-direction: column;
-    }
+	main {
+		flex-direction: column;
+	}
 
-    .imagens, .textos{
-        width: 99vw;
-    }
+	.imagens,
+	.textos {
+		width: 99vw;
+	}
 
-    .textos{
-        justify-content: center;
-        align-items: center;
-    }
+	.textos {
+		justify-content: center;
+		align-items: center;
+	}
 }
