@@ -33,6 +33,21 @@ function modalCarrinho(){
 	modal.classList.toggle ("active")
 }
 
+function menuToggle(){
+	const imagem = document.getElementById("menu__humburger")
+	const blur = document.querySelector(".blur")
+	humburguer = document.querySelector(".humburger")
+	humburguer.classList.toggle("active")
+
+	if(humburguer.classList.contains("active")){
+		imagem.src = "./img/icon-close.svg"
+		blur.classList.add("active")
+	}else{
+		imagem.src = "./img/icon-menu.svg"
+		blur.classList.remove("active")
+	}
+}
+
 function adicionarCarrinho(){
 	modal.innerHTML = ""
 	let html = `
