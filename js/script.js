@@ -13,7 +13,7 @@ function incrementar(valor) {
 }
 
 function mudarImagem(imagemClicada, posicao) {
-	let imagemPrincipal = document.querySelectorAll("#imagem__principal img");
+	let imagemPrincipal = document.querySelector("#imagem__principal img");
 	let imagem = imagens[posicao];
 	imagens.forEach((elemento) => {
 		elemento.style.border = "none";
@@ -26,3 +26,4 @@ function mudarImagem(imagemClicada, posicao) {
 }
 
 document.getElementById("quantidade").innerHTML = storangeFunctions.pegar();
+mudarImagem("./img/image-product-1.jpg", 0);
