@@ -330,6 +330,12 @@ img {
 		justify-content: center;
 		align-items: center;
 	}
+
+	.textos h2, .textos #paragrafo{
+		width: auto;
+		text-align: center;
+	}
+	
 	.modal__carrinho.active {
 		right: 0;
 		left: 50%;
