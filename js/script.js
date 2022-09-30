@@ -16,13 +16,18 @@ function mudarImagem(imagemClicada, posicao) {
 	let imagemPrincipal = document.querySelector("#imagem__principal img");
 	let imagem = imagens[posicao];
 	imagens.forEach((elemento) => {
-		imagemPrincipal.style.border = "none";
+		elemento.style.border = "none";
 		elemento.style.opacity = "1";
 	});
 
 	imagemPrincipal.src = imagemClicada;
 	imagem.style.border = "2px solid orange";
 	imagem.style.opacity = "0.5";
+}
+
+function modalCarrinho(){
+	modal = document.querySelector(".modal__carrinho")
+	modal.classList.toggle ("active")
 }
 
 document.getElementById("quantidade").innerHTML = storangeFunctions.pegar();
