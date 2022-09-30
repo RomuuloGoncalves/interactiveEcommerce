@@ -275,6 +275,8 @@ img {
 		align-items: center;
 	}
 	.modal__carrinho.active {
-		right: 70px;
+		right: 50%;
+		transform: translateX(50%);
+		width: 95vw;
 	}
 }

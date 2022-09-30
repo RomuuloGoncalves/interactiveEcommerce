@@ -58,6 +58,7 @@ function limparCarrinho(){
 	modal.innerHTML = ""
 	let html = `
 	<p id="cart">Cart</p>
+	<p>Your cart is empty</p>
 	`
 	modal.innerHTML += html
 	modalCarrinho()
